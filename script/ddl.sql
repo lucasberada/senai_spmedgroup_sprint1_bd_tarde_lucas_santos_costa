@@ -74,3 +74,27 @@ idprontuario int foreign key references prontuario(idprontuario),
 dataconsulta datetime not null,
 situacaoconsulta varchar (10) not null
 );
+
+
+alter table medico
+add idprontuario int foreign key references prontuario(idprontuario)
+
+---------ex10 teste
+create table usuario10(
+idusuario10 int primary key identity,
+nomeusuario varchar (200)not null,
+email varchar (200)not null,
+datanascimento datetime2 
+);
+
+insert into usuario10(nomeusuario,email)
+values ('ivete professora','ivete@gmail.com');
+
+insert into usuario10(nomeusuario,email,datanascimento)
+values ('ivete professora','ivete@gmail.com','11/11/1990'),
+('CARLOS','CARLOS@gmail.com','11/11/1990'),
+('SILVA professora','SILVA@gmail.com','11/11/1990')
+
+select * from  usuario10
+
+DELETE FROM usuario10 WHERE idusuario10=1;

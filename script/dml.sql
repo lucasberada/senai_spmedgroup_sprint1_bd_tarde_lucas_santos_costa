@@ -8,6 +8,13 @@ SELECT * FROM usuario
 SELECT * FROM medico
 SELECT * FROM prontuario
 SELECT * FROM consulta
+SELECT * FROM adm
+select  * FROM clinica
+select  * FROM passiente
+
+
+
+s
 
 
 
@@ -45,11 +52,8 @@ values (1,2,'234234234-3','223234556')
 
 
 
-
-
-
-
-
+UPDATE medico
+SET idprontuario = 1
 
 
 
